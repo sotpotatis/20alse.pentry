@@ -1,0 +1,19 @@
+/* CSS för pentryansvar. Det mesta sköts av Bootstrap. */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); /*Importera font */
+
+/* Styling för body */
+body {
+  background: #ebebeb;
+  /*color: #9c9c9c;*/
+  font-family: 'Poppins', 'sans-serif'; !important
+  margin: 2em;
+}
+
+/* Specifik styling för page-footern */
+.footer {
+  font-size: 70%;
+}
+/*.footer a {
+    color: #9c9c9c;
+}*/

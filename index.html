@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vem har pentryansvar? | Albins webbplats</title>
+    <!-- importera bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- importera stylesheet -->
+    <link rel="stylesheet" href="/pentry/styles.css">
+    <!--- importera jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- importera Iconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/pentry/script.js" defer></script>
+  </head>  
+  <body>      
+    <div class="vh-100 d-flex justify-content-center align-items-center text-secondary">
+      <div>
+        <div class="alert alert-danger" hidden>
+          <b>Skämmigt...</b> Ett fel inträffade när pentryschemat skulle hämtas och/eller behandlas. Klaga på Albin, så löser han säkert detta!
+        </div>
+      <h1 class="font-weight-bold"> 
+        Vem har pentryansvar? <span class="badge badge-secondary" hidden>v2.0</span> <!-- (inte längra i Beta längre, tihi!) -->
+      </h1> 
+      <p>
+        Här hittar du vem som har pentryansvar denna vecka på SSIS, så du vet vilka du ska hylla när du kommer till pentryt och alla kaffekoppar står fint uppradade i skåpen.
+        </p>  
+      <h5 class="font-weight-bold">
+        Pentry 1 <a data-toggle="tooltip" data-placement="right" data-html="true" title="<b>Om Pentry 1</b><br>Pentry 1 är det som ligger närmast huvudentrén till skolan vid Tetris-salen."><span class="iconify" data-icon="fa-solid:info-circle" data-inline="false"></span>&nbsp;</a>
+        </h5>
+        <p>
+          Ansvarande klass: <span class="font-weight-bold" id="pentry1_class">Laddar...</span><br>
+          Extra ansvarande elever: <span class="font-weight-bold" id="pentry1_students">Laddar...</span>
+        </p>
+      <h5 class="font-weight-bold">
+        Pentry 2 <a data-toggle="tooltip" data-placement="right" data-html="true" title="<b>Om Pentry 2</b><br>Pentry 2 är det som ligger vid den närmaste entrén om man går in från tunnelbane-hållet. Pentry 2 ligger nära grupprummen och biblioteket."><span class="iconify" data-icon="fa-solid:info-circle" data-inline="false"></span></a>
+        </h5>
+        <p>
+          Ansvarande klass: <span class="font-weight-bold" id="pentry2_class">Laddar...</span><br>
+          Extra ansvarande elever: <span class="font-weight-bold" id="pentry2_students">Laddar...</span>
+        </p>
+        <div id="footer" class="footer">
+        <p>
+          Vem Har Pentryansvar? drivs av <a href="https://20alse.ssis.nu/" target="_blank">20alse</a>. Powered by <a href="https://api.ssis.nu/cal/?room=Hela%20skolan" target="_blank">SSIS API</a> & <a href="https://pentryansvar.albins.website/api/pentryansvar" target="_blank">mitt egna API</a> (<a href="https://github.com/sotpotatis/SSISPentryAnsvarServer">GitHub</a>).
+        </p>
+      </div>
+      </div>
+      </div>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});</script></body>
+</html>
